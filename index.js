@@ -1,6 +1,8 @@
-var fs = require('fs');
-var readableStream = fs.createReadStream('file1.txt');
-var writableStream = fs.createWriteStream('file2.txt');
+'use strict';
+
+const fs = require('fs');
+const readableStream = fs.createReadStream('file1.txt');
+const writableStream = fs.createWriteStream('file2.txt');
 
 readableStream.setEncoding('utf8');
 
